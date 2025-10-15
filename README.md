@@ -1,4 +1,4 @@
-# วิธีตั้งค่า PHP และ NGINX ให้รองรับ Concurrent ได้มาก
+# วิธีตั้งค่า PHP-FPM และ NGINX ให้รองรับ Concurrent
 
 ## ปรับ PHP-FPM ให้รองรับ Concurrent Connections มากขึ้น
 - แก้ไขไฟล์ `www.conf`
