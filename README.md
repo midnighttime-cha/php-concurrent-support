@@ -1,5 +1,7 @@
 # วิธีตั้งค่า PHP-FPM และ NGINX ให้รองรับ Concurrent
 
+- มีเงื่อนไขว่าระบบต้องรองรับ Concurrent 200 คนขึ้นไป
+
 ## ปรับ PHP-FPM ให้รองรับ Concurrent Connections มากขึ้น
 - แก้ไขไฟล์ `www.conf`
 ```
