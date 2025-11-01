@@ -43,6 +43,14 @@ slowlog = /var/log/[PHP Version]-fpm.slow.log
 
 -- pm.max_children คือจำนวน concurrent PHP-FPM workers ถ้าคุณต้องการรองรับ 200 user พร้อมกัน แนะนำตั้งค่า: 200–250 worker (ขึ้นกับ CPU/RAM) ตรวจสอบหน่วยความจำว่า worker ละ ~40–60 MB
 
+```
+RAM	ค่าแนะนำ (โดยประมาณ)
+1 GB	pm.max_children = 10–15
+2 GB	pm.max_children = 30–40
+4 GB	pm.max_children = 60–80
+8 GB+	ปรับตามโหลดจริง (100+ ได้)
+```
+
 ## ปรับค่าใน php.ini
 - แก้ไขไฟล์ตามตัวอย่างต่อไปนี้
 ```
